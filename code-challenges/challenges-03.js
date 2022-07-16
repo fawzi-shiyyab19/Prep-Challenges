@@ -84,12 +84,12 @@ const cvFormatter = (arr) => {
 
 const targetArrayInGivenOrder = (numsArr, indexArr) => {
   let targetArr=[];
-  
-    
-  for (let i = 0, n = numsArr.length; i < n; i++)
-      targetArr.splice(indexArr[i], 0, numsArr[i]);
-  
-    return targetArr;
+  const nums = [1, 2, 3, 4, 0];
+
+const index = [0, 1, 2, 3, 0];
+  // write your code here
+  targetArr.splice(indexArr,0,nums[index[indexArr]])
+  return targetArr;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -107,11 +107,10 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
 
 const arrInc = (arr) => {
   let result = [];
-  // write your code here
   for (var i = 0; i < arr.length; i++) {
     result.push(arr + 1);
-  return result;
-  };
+return result;
+  }
 };
 // -------------------------------------------------------------------------------------------------------
 
